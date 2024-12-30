@@ -1,0 +1,71 @@
+
+.body {
+    background-color: black;
+}
+.sidebar {
+    height: 100%;
+    width: 35vh;
+    position: fixed;
+    /* background-color: #f6f5f5; */
+    /* overflow-x: hidden; */
+    margin-top: 7.3vh;
+    padding-top: 16px;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 2.3vh;
+    color: black;
+    display: block;
+    margin: 2vh 0 2vh 0;
+  }
+  .sidebar a i{
+    padding-right: 3vh;
+    color: #525f7f;
+  }
+
+  .sidebar a:hover {
+    border-radius: 1vh;
+    background-color: #d1cece;
+    margin: 0 2vh 0 2vh;
+    color: gray;
+  }
+
+  .main {
+    margin-left: 160px; 
+    padding: 0px 10px;
+  }
+  .topnav {
+    /* overflow: hidden; */
+    /* background-color: #dfdfdf;
+    border-radius: solid 1px rgb(114, 27, 27); */
+    height: 7.3vh;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 2vh;
+    /* margin-bottom: 20vh; */
+  }
+  
+  .topnav a {
+    float: left;
+    /* display: flex; */
+    color: black;
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 1vh;
+  }
+  
+  /* .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: solid 1px rgb(160, 160, 160);
+    background-color: #ecebeb;
+    border-radius: 1vh;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  } */
