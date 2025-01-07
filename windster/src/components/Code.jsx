@@ -64,7 +64,7 @@ function Code() {
       </div>
       <div
         className="topnav"
-        style={{ border: "1.5px solid #EEEEEE", borderTop: "none" }}
+        style={{ border: "1.5px solid #EEEEEE", borderTop: "none", position:"fixed"}}
       >
         <a class="active" href="#logo">
           <img src="src/assets/windsteruilogo.svg" width="33" height="33" />
@@ -147,7 +147,7 @@ function Code() {
             className="graph"
             style={{
               background: "white",
-              borderRadius: "30px",
+              borderRadius: "15px",
               padding: "50px",
               width: "100vh",
               marginTop: "3vh",
@@ -177,7 +177,7 @@ function Code() {
             className="latest"
             style={{
               background: "white",
-              borderRadius: "30px",
+              borderRadius: "15px",
               padding: "50px",
               width: "70vh",
               marginTop: "3vh",
@@ -206,7 +206,7 @@ function Code() {
             <div style={{ overflowX: "auto" }}>
               <table
                 style={{
-                  marginTop:"5vh",
+                  marginTop: "5vh",
                   borderCollapse: "collapse",
                   borderSpacing: "0",
                   width: "100%",
@@ -214,53 +214,170 @@ function Code() {
                 }}
               >
                 <tr>
-                  <th style={{padding:"15px 190px 15px 10px", fontWeight:"small", color:"gray"}}>TRANSACTION
+                  <th
+                    style={{
+                      padding: "15px 190px 15px 10px",
+                      fontWeight: "small",
+                      color: "gray",
+                    }}
+                  >
+                    TRANSACTION
                   </th>
-                  <th style={{padding:"15px 10px", fontWeight:"small", whiteSpace: "nowrap", color:"gray"}}>DATE & TIME
+                  <th
+                    style={{
+                      padding: "15px 10px",
+                      fontWeight: "small",
+                      whiteSpace: "nowrap",
+                      color: "gray",
+                    }}
+                  >
+                    DATE & TIME
                   </th>
-                  <th style={{padding:"15px 10px", fontWeight:"small", color:"gray"}}>AMOUNT</th>
+                  <th
+                    style={{
+                      padding: "15px 10px",
+                      fontWeight: "small",
+                      color: "gray",
+                    }}
+                  >
+                    AMOUNT
+                  </th>
                 </tr>
                 <tr>
-                  <td style={{ padding:"15px 10px"  }}>
+                  <td style={{ padding: "15px 10px" }}>
                     Payment from Bonnie Green
                   </td>
-                  <td style={{ padding:"15px 10px" }}>
-                    Apr 23 ,2021
+                  <td style={{ padding: "15px 10px" }}>Apr 23 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>$2300</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "15px 10px" }}>
+                    Payment refund to #00910
                   </td>
-                  <td style={{ padding:"15px 10px"  }}>$2300</td>
+                  <td style={{ padding: "15px 10px" }}>Apr 23 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>-$670</td>
                 </tr>
                 <tr>
-                  <td style={{ padding:"15px 10px"  }}>Payment refund to #00910</td>
-                  <td style={{ padding:"15px 10px"  }}>Apr 23 ,2021</td>
-                  <td style={{padding:"15px 10px"}}>-$670</td>
+                  <td style={{ padding: "15px 10px" }}>
+                    Payment failed from #087651
+                  </td>
+                  <td style={{ padding: "15px 10px" }}>Apr 18 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>$234</td>
                 </tr>
                 <tr>
-                  <td style={{ padding:"15px 10px"  }}>Payment failed from #087651</td>
-                  <td style={{ padding:"15px 10px"  }}>Apr 18 ,2021</td>
-                  <td style={{ padding:"15px 10px"  }}>$234</td>
+                  <td style={{ padding: "15px 10px" }}>
+                    Payment from Lana Byrd
+                  </td>
+                  <td style={{ padding: "15px 10px" }}>Apr 15 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>$5000</td>
                 </tr>
                 <tr>
-                  <td style={{  padding:"15px 10px" }}>Payment from Lana Byrd</td>
-                  <td style={{  padding:"15px 10px" }}>Apr 15 ,2021</td>
-                  <td style={{  padding:"15px 10px" }}>$5000</td>
+                  <td style={{ padding: "15px 10px" }}>
+                    Payment from Jese Leos
+                  </td>
+                  <td style={{ padding: "15px 10px" }}>Apr 15 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>$2300</td>
                 </tr>
                 <tr>
-                  <td style={{padding:"15px 10px"   }}>Payment from Jese Leos</td>
-                  <td style={{ padding:"15px 10px"  }}>Apr 15 ,2021</td>
-                  <td style={{ padding:"15px 10px"  }}>$2300</td>
+                  <td style={{ padding: "15px 10px" }}>
+                    Payment from THEMESBERG LLC
+                  </td>
+                  <td style={{ padding: "15px 10px" }}>Apr 11 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>$560</td>
                 </tr>
                 <tr>
-                  <td style={{ padding:"15px 10px"  }}>Payment from THEMESBERG LLC</td>
-                  <td style={{ padding:"15px 10px"  }}>Apr 11 ,2021</td>
-                  <td style={{ padding:"15px 10px"  }}>$560</td>
-                </tr>
-                <tr>
-                  <td style={{ padding:"15px 10px"  }}>Payment from Lana Lysle</td>
-                  <td style={{  padding:"15px 10px" }}>Apr 6 ,2021</td>
-                  <td style={{ padding:"15px 10px"  }}>$1437</td>
+                  <td style={{ padding: "15px 10px" }}>
+                    Payment from Lana Lysle
+                  </td>
+                  <td style={{ padding: "15px 10px" }}>Apr 6 ,2021</td>
+                  <td style={{ padding: "15px 10px" }}>$1437</td>
                 </tr>
               </table>
             </div>
+          </div>
+        </div>
+        <div
+          className="grid"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "55vh 55vh 55vh",
+            gap: "2vh",
+            marginTop: "3vh",
+          }}
+        >
+          <div
+            className="first-grid"
+            style={{
+              background: "white",
+              borderRadius: "10px",
+              padding: "20px",
+              textAlign: "left",
+              position: "relative",
+            }}
+          >
+            <h2>
+              <strong>2,340</strong>
+            </h2>
+            <p>New products this week</p>
+            <p
+              style={{
+                position: "absolute",
+                right: "20px",
+                top:"45px",
+                color: "green",
+                fontWeight: "bold",
+              }}
+            >
+              14.6%<i class="fa-solid fa-arrow-up"></i>
+            </p>
+          </div>
+          <div
+            className="second-grid"
+            style={{
+              background: "white",
+              borderRadius: "10px",
+              padding: "20px",
+              textAlign: "left",
+              position: "relative",
+            }}
+          >
+            <h2>
+              <strong>5,355</strong>
+            </h2>
+            <p>Visitors this week</p>
+            <p style={{
+                position: "absolute",
+                right: "20px",
+                top:"45px",
+                color: "green",
+                fontWeight: "bold",
+              }}>
+              32.9%<i class="fa-solid fa-arrow-up"></i>
+            </p>
+          </div>
+          <div
+            className="third-grid"
+            style={{
+              background: "white",
+              borderRadius: "10px",
+              padding: "20px",
+              textAlign: "left",
+              position: "relative",
+            }}
+          >
+            <h2>
+              <strong>385</strong>
+            </h2>
+            <p>User signups this week</p>
+            <p style={{
+                position: "absolute",
+                right: "20px",
+                top:"45px",
+                color: "red",
+                fontWeight: "bold",
+              }}>
+              -2.7%<i class="fa-solid fa-arrow-down"></i>
+            </p>
           </div>
         </div>
       </div>
